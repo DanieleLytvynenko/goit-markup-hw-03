@@ -1,3 +1,34 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+/* ===== Контейнер ===== */
+.container {
+  max-width: 1158px; /* по макету */
+  padding-left: 15px; /* заменить на макет */
+  padding-right: 15px; /* заменить на макет */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Body ===== */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -8,6 +39,39 @@ body {
   font-weight: 400;
 }
 
+/* ===== Header ===== */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px; /* заменить на макет */
+}
+
+.contact-list {
+  display: flex;
+  gap: 40px; /* заменить на макет */
+}
+
+.nav-link,
+.contact-link {
+  display: block;
+  padding: 24px 0; /* формирует высоту header */
+}
+
+/* ===== Логотип ===== */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -23,8 +87,11 @@ body {
   color: #2e2f42; /* Для хедера */
 }
 
+/* ===== Hero ===== */
 .hero {
   background-color: #2e2f42;
+  padding: 188px 0; /* заменить на макет */
+  text-align: center;
 }
 
 .hero-title {
@@ -33,7 +100,6 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
-  text-align: center;
 }
 
 .hero-button {
@@ -45,6 +111,10 @@ body {
   color: #ffffff;
   background-color: #4d5ae5;
   cursor: pointer;
+  margin-top: 48px;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
 }
 
 .hero-button:hover,
@@ -52,6 +122,13 @@ body {
   background-color: #404bbf;
 }
 
+/* ===== Секции ===== */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* ===== Section Titles ===== */
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -60,6 +137,16 @@ body {
   color: #2e2f42;
   text-align: center;
   text-transform: capitalize;
+}
+
+/* ===== Features ===== */
+.features-list {
+  display: flex;
+  gap: 24px; /* заменить на макет */
+}
+
+.feature-item {
+  width: calc((100% - 72px) / 4); /* 4 элемента, gap 24px */
 }
 
 .feature-title {
@@ -78,12 +165,20 @@ body {
   color: #434455;
 }
 
+/* ===== Team ===== */
 .team {
   background-color: #f4f4fd;
 }
 
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
 .team-member {
+  width: calc((100% - 72px) / 4);
   background-color: #ffffff;
+  text-align: center;
 }
 
 .team-name {
@@ -92,6 +187,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-top: 32px; /* заменить на макет */
 }
 
 .team-role {
@@ -100,6 +196,19 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-top: 8px; /* заменить на макет */
+}
+
+/* ===== Portfolio ===== */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px; /* row-gap 48px, column-gap 24px */
+}
+
+.portfolio-item {
+  width: calc((100% - 48px) / 3); /* 3 элемента в ряд */
+  border-bottom: 1px solid #e7e9fc; /* рамка снизу */
 }
 
 .portfolio-title {
@@ -118,6 +227,7 @@ body {
   color: #434455;
 }
 
+/* ===== Ссылки ===== */
 .nav-link {
   color: #2e2f42;
   font-weight: 500;
@@ -141,17 +251,16 @@ body {
 }
 
 .nav-link:hover,
-.nav-link:focus {
-  color: #404bbf;
-}
-
+.nav-link:focus,
 .contact-link:hover,
 .contact-link:focus {
   color: #404bbf;
 }
 
+/* ===== Footer ===== */
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0; /* заменить на макет */
 }
 
 .footer-logo {
@@ -176,4 +285,20 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 16px;
+  max-width: 264px; /* заменить на макет */
+}
+
+/* ===== Visually hidden ===== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
