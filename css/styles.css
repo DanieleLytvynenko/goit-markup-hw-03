@@ -1,3 +1,4 @@
+/* ===== Reset & Base ===== */
 h1,
 h2,
 h3,
@@ -19,16 +20,6 @@ img {
   display: block;
 }
 
-/* ===== Контейнер ===== */
-.container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ===== Body ===== */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -37,6 +28,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ===== Header ===== */
@@ -59,7 +59,7 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  margin-right: 76px; /* Добавлено для проверки */
+  margin-right: 76px;
 }
 
 .logo-studio {
@@ -77,8 +77,8 @@ body {
 }
 
 .nav-link {
-  display: inline-block; /* Для проверки footer и ссылок */
-  padding: 24px 0;
+  display: inline-block;
+  padding: 24px 0; /* Исправлено padding */
   color: #2e2f42;
   font-weight: 500;
   font-size: 16px;
@@ -116,10 +116,11 @@ body {
   font-style: normal;
 }
 
-/* ===== Hero ===== */
+/* ===== Hero Section ===== */
 .hero {
   background-color: #2e2f42;
-  padding: 188px 0;
+  padding-top: 188px; /* Исправлено padding */
+  padding-bottom: 188px;
   text-align: center;
 }
 
@@ -129,8 +130,9 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
-  max-width: 496px; /* Добавлено для проверки */
-  margin: 0 auto;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
@@ -142,12 +144,13 @@ body {
   color: #ffffff;
   background-color: #4d5ae5;
   cursor: pointer;
-  margin: 48px auto 0; /* Центрирование кнопки */
+  display: block;
+  min-width: 169px;
+  height: 56px;
   border: none;
   border-radius: 4px;
+  margin: 48px auto 0;
   padding: 16px 32px;
-  display: block; /* Для центровки через margin auto */
-  min-width: 169px; /* Добавлено для проверки */
 }
 
 .hero-button:hover,
@@ -155,7 +158,7 @@ body {
   background-color: #404bbf;
 }
 
-/* ===== Sections ===== */
+/* ===== Section Base ===== */
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -170,10 +173,10 @@ body {
   color: #2e2f42;
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: 72px; /* Для проверки */
+  margin-bottom: 72px;
 }
 
-/* ===== Features ===== */
+/* ===== Features Section ===== */
 .features-list {
   display: flex;
   gap: 24px;
@@ -189,6 +192,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .feature-text {
@@ -199,7 +203,7 @@ body {
   color: #434455;
 }
 
-/* ===== Team ===== */
+/* ===== Team Section ===== */
 .team {
   background-color: #f4f4fd;
   padding-top: 120px;
@@ -215,12 +219,12 @@ body {
   width: calc((100% - 72px) / 4);
   background-color: #ffffff;
   text-align: center;
-  border-radius: 0 0 4px 4px; /* Добавлено для проверки */
+  border-radius: 0 0 4px 4px;
 }
 
 .team-info {
-  /* контейнер для имени и роли */
-  padding: 32px 0; /* Добавлено */
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-name {
@@ -229,7 +233,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center; /* Для проверки */
+  text-align: center;
   margin-bottom: 8px;
 }
 
@@ -239,15 +243,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  text-align: center; /* Для проверки */
+  text-align: center;
 }
 
-/* ===== Portfolio ===== */
-.portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
+/* ===== Portfolio Section ===== */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -256,9 +255,12 @@ body {
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
+}
+
+.portfolio-info {
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  padding: 32px 16px;
 }
 
 .portfolio-title {
@@ -266,7 +268,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px; /* Для проверки */
+  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -282,7 +284,8 @@ body {
 /* ===== Footer ===== */
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -294,8 +297,8 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  display: inline-block; /* Добавлено для проверки */
-  margin-bottom: 16px; /* Добавлено для проверки */
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo .logo-studio {
@@ -308,8 +311,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 16px;
   max-width: 264px;
+  margin-top: 16px;
 }
 
 /* ===== Visually hidden ===== */
