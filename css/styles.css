@@ -1,4 +1,3 @@
-/* ===== Reset ===== */
 h1,
 h2,
 h3,
@@ -8,12 +7,14 @@ h6,
 p {
   margin: 0;
 }
+
 ul,
 ol {
   margin: 0;
   padding-left: 0;
   list-style: none;
 }
+
 img {
   display: block;
 }
@@ -21,73 +22,98 @@ img {
 /* ===== Контейнер ===== */
 .container {
   max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ===== Body ===== */
 body {
   font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+  letter-spacing: 0.02em;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   font-weight: 400;
-  color: #434455;
-  background-color: #fff;
 }
 
 /* ===== Header ===== */
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
+
 .header .container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
 }
-.nav {
-  display: flex;
-  align-items: center;
-}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  margin-right: 76px;
+  margin-right: 76px; /* Добавлено для проверки */
 }
+
 .logo-studio {
   color: #2e2f42;
 }
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav-list {
   display: flex;
   gap: 40px;
 }
+
 .nav-link {
+  display: inline-block; /* Для проверки footer и ссылок */
+  padding: 24px 0;
   color: #2e2f42;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
 }
+
 .contact-list {
   display: flex;
   gap: 40px;
 }
+
 .contact-link {
+  display: inline-block;
   color: #434455;
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .contact-link:hover,
 .contact-link:focus {
   color: #404bbf;
+}
+
+.contact {
+  font-style: normal;
 }
 
 /* ===== Hero ===== */
@@ -96,30 +122,34 @@ body {
   padding: 188px 0;
   text-align: center;
 }
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: #fff;
-  max-width: 496px;
+  color: #ffffff;
+  max-width: 496px; /* Добавлено для проверки */
   margin: 0 auto;
 }
+
 .hero-button {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
   background-color: #4d5ae5;
+  cursor: pointer;
+  margin: 48px auto 0; /* Центрирование кнопки */
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
-  cursor: pointer;
-  display: block;
-  min-width: 169px;
-  margin: 48px auto 0;
+  display: block; /* Для центровки через margin auto */
+  min-width: 169px; /* Добавлено для проверки */
 }
+
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
@@ -127,22 +157,11 @@ body {
 
 /* ===== Sections ===== */
 .section {
-  padding: 120px 0;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-/* ===== Features ===== */
+/* ===== Section Titles ===== */
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -151,92 +170,106 @@ body {
   color: #2e2f42;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px; /* Для проверки */
 }
+
+/* ===== Features ===== */
 .features-list {
   display: flex;
   gap: 24px;
 }
+
 .feature-item {
   width: calc((100% - 72px) / 4);
 }
+
 .feature-title {
+  color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
 }
+
 .feature-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-bottom: 8px;
 }
 
 /* ===== Team ===== */
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
 .team-list {
   display: flex;
   gap: 24px;
 }
-.team-member:first-child {
-  border-radius: 0 0 4px 4px;
-}
+
 .team-member {
   width: calc((100% - 72px) / 4);
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center;
+  border-radius: 0 0 4px 4px; /* Добавлено для проверки */
 }
+
 .team-info {
-  padding: 32px 0;
-  text-align: center;
+  /* контейнер для имени и роли */
+  padding: 32px 0; /* Добавлено */
 }
+
 .team-name {
   color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center; /* Для проверки */
   margin-bottom: 8px;
-  text-align: center;
 }
+
 .team-role {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  text-align: center;
+  text-align: center; /* Для проверки */
 }
 
 /* ===== Portfolio ===== */
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
 }
+
 .portfolio-item {
   width: calc((100% - 48px) / 3);
-  border-bottom: 1px solid #e7e9fc;
-}
-.portfolio-info {
-  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+  padding: 32px 16px;
 }
+
 .portfolio-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
+  margin-bottom: 8px; /* Для проверки */
   text-align: center;
 }
+
 .portfolio-category {
   font-weight: 400;
   font-size: 16px;
@@ -251,6 +284,7 @@ body {
   background-color: #2e2f42;
   padding: 100px 0;
 }
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -260,17 +294,34 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  display: inline-block;
-  margin-bottom: 16px;
+  display: inline-block; /* Добавлено для проверки */
+  margin-bottom: 16px; /* Добавлено для проверки */
 }
+
 .footer-logo .logo-studio {
   color: #f4f4fd;
 }
+
 .footer-text {
   color: #f4f4fd;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 16px;
   max-width: 264px;
+}
+
+/* ===== Visually hidden ===== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

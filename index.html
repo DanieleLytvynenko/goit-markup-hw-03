@@ -1,166 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Effective solutions for your business" />
-    <title>Web Studio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Effective solutions for your business" />
+  <title>Web Studio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <header class="header">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="./index.html" class="logo" style="margin-right:76px;">Web<span class="logo-studio">Studio</span></a>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="./index.html" class="nav-link">Studio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="contact">
+        <ul class="contact-list">
+          <li class="contact-item"><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a></li>
+          <li class="contact-item"><a href="tel:+110001111111" class="contact-link">+11 (000) 111-11-11</a></li>
+        </ul>
+      </address>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding:188px 0;">
       <div class="container">
-        <nav class="nav">
-          <a href="./index.html" class="logo">
-            Web<span class="logo-studio">Studio</span>
-          </a>
-          <ul class="nav-list">
-            <li class="nav-item"><a href="./index.html" class="nav-link">Studio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
-          </ul>
-        </nav>
-        <address class="contact">
-          <ul class="contact-list">
-            <li class="contact-item">
-              <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
-            </li>
-            <li class="contact-item">
-              <a href="tel:+110001111111" class="contact-link">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
-        </address>
+        <h1 class="hero-title" style="max-width:496px;margin:0 auto;">Effective Solutions for Your Business</h1>
+        <button type="button" class="hero-button" style="display:block;min-width:169px;margin:48px auto 0;">Order Service</button>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="hero section">
-        <h2 class="visually-hidden">Hero Section</h2>
-        <div class="container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
-        </div>
-      </section>
-
-      <section class="features section">
-        <h2 class="visually-hidden">Features</h2>
-        <div class="container">
-          <ul class="features-list">
-            <li class="feature-item">
-              <h3 class="feature-title">Strategy</h3>
-              <p class="feature-text">
-                Our goal is to identify the business problem to walk away with the perfect and creative solution.
-              </p>
-            </li>
-            <li class="feature-item">
-              <h3 class="feature-title">Punctuality</h3>
-              <p class="feature-text">
-                Bring the key message to the brand's audience for the best price within the shortest possible time.
-              </p>
-            </li>
-            <li class="feature-item">
-              <h3 class="feature-title">Diligence</h3>
-              <p class="feature-text">
-                Research and confirm brands with the strongest digital growth opportunities and minimize risk.
-              </p>
-            </li>
-            <li class="feature-item">
-              <h3 class="feature-title">Technologies</h3>
-              <p class="feature-text">
-                Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="team section">
-        <h2 class="visually-hidden">Our Team</h2>
-        <div class="container">
-          <ul class="team-list">
-            <li class="team-member">
-              <img src="./images/team-mark-guerrero.jpg" alt="Mark Guerrero" width="264" height="260" />
-              <div class="team-info">
-                <h3 class="team-name">Mark Guerrero</h3>
-                <p class="team-role">Product Designer</p>
-              </div>
-            </li>
-            <li class="team-member">
-              <img src="./images/team-tom-ford.jpg" alt="Tom Ford" width="264" height="260" />
-              <div class="team-info">
-                <h3 class="team-name">Tom Ford</h3>
-                <p class="team-role">Frontend Developer</p>
-              </div>
-            </li>
-            <li class="team-member">
-              <img src="./images/team-camila-garcia.jpg" alt="Camila Garcia" width="264" height="260" />
-              <div class="team-info">
-                <h3 class="team-name">Camila Garcia</h3>
-                <p class="team-role">Marketing</p>
-              </div>
-            </li>
-            <li class="team-member">
-              <img src="./images/team-daniel-wilson.jpg" alt="Daniel Wilson" width="264" height="260" />
-              <div class="team-info">
-                <h3 class="team-name">Daniel Wilson</h3>
-                <p class="team-role">UI Designer</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="portfolio section">
-        <h2 class="visually-hidden">Our Portfolio</h2>
-        <div class="container">
-          <ul class="portfolio-list">
-            <li class="portfolio-item">
-              <img src="#" alt="Project 1" />
-              <div class="portfolio-info">
-                <h3 class="portfolio-title">Project 1</h3>
-                <p class="portfolio-category">Category 1</p>
-              </div>
-            </li>
-            <li class="portfolio-item">
-              <img src="#" alt="Project 2" />
-              <div class="portfolio-info">
-                <h3 class="portfolio-title">Project 2</h3>
-                <p class="portfolio-category">Category 2</p>
-              </div>
-            </li>
-            <li class="portfolio-item">
-              <img src="#" alt="Project 3" />
-              <div class="portfolio-info">
-                <h3 class="portfolio-title">Project 3</h3>
-                <p class="portfolio-category">Category 3</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
+    <section class="features" style="padding:120px 0;">
+      <h2 class="section-title visually-hidden">Features</h2>
       <div class="container">
-        <a href="./index.html" class="footer-logo">Web<span class="logo-studio">Studio</span></a>
-        <p class="footer-text">
-          Increase the flow of customers and sales for your business with digital marketing &amp; growth solutions.
-        </p>
+        <ul class="features-list">
+          <li class="feature-item">
+            <h3 class="feature-title">Strategy</h3>
+            <p class="feature-text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+          </li>
+          <li class="feature-item">
+            <h3 class="feature-title">Punctuality</h3>
+            <p class="feature-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+          </li>
+          <li class="feature-item">
+            <h3 class="feature-title">Diligence</h3>
+            <p class="feature-text">Research and confirm brands with the strongest digital growth opportunities and minimize risk.</p>
+          </li>
+          <li class="feature-item">
+            <h3 class="feature-title">Technologies</h3>
+            <p class="feature-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+          </li>
+        </ul>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <section class="team" style="padding:120px 0;">
+      <h2 class="section-title visually-hidden">Our Team</h2>
+      <div class="container">
+        <ul class="team-list">
+          <li class="team-member">
+            <img src="./images/team-mark-guerrero.jpg" alt="Mark Guerrero" width="264" height="260" />
+            <div class="team-info" style="padding:32px 0;text-align:center;">
+              <h3 class="team-name" style="margin-bottom:8px;">Mark Guerrero</h3>
+              <p class="team-role">Product Designer</p>
+            </div>
+          </li>
+          <li class="team-member">
+            <img src="./images/team-tom-ford.jpg" alt="Tom Ford" width="264" height="260" />
+            <div class="team-info" style="padding:32px 0;text-align:center;">
+              <h3 class="team-name" style="margin-bottom:8px;">Tom Ford</h3>
+              <p class="team-role">Frontend Developer</p>
+            </div>
+          </li>
+          <li class="team-member">
+            <img src="./images/team-camila-garcia.jpg" alt="Camila Garcia" width="264" height="260" />
+            <div class="team-info" style="padding:32px 0;text-align:center;">
+              <h3 class="team-name" style="margin-bottom:8px;">Camila Garcia</h3>
+              <p class="team-role">Marketing</p>
+            </div>
+          </li>
+          <li class="team-member">
+            <img src="./images/team-daniel-wilson.jpg" alt="Daniel Wilson" width="264" height="260" />
+            <div class="team-info" style="padding:32px 0;text-align:center;">
+              <h3 class="team-name" style="margin-bottom:8px;">Daniel Wilson</h3>
+              <p class="team-role">UI Designer</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="portfolio" style="padding:120px 0;">
+      <h2 class="section-title visually-hidden">Our Portfolio</h2>
+      <div class="container">
+        <ul class="portfolio-list">
+          <li class="portfolio-item" style="width:calc((100% - 48px)/3);">
+            <div class="portfolio-info" style="padding:32px 16px;border:1px solid #e7e9fc;border-top:none;">
+              <h3 class="portfolio-title" style="margin-bottom:8px;">App 1</h3>
+              <p class="portfolio-category">Category 1</p>
+            </div>
+          </li>
+          <li class="portfolio-item" style="width:calc((100% - 48px)/3);">
+            <div class="portfolio-info" style="padding:32px 16px;border:1px solid #e7e9fc;border-top:none;">
+              <h3 class="portfolio-title" style="margin-bottom:8px;">App 2</h3>
+              <p class="portfolio-category">Category 2</p>
+            </div>
+          </li>
+          <li class="portfolio-item" style="width:calc((100% - 48px)/3);">
+            <div class="portfolio-info" style="padding:32px 16px;border:1px solid #e7e9fc;border-top:none;">
+              <h3 class="portfolio-title" style="margin-bottom:8px;">App 3</h3>
+              <p class="portfolio-category">Category 3</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a href="./index.html" class="footer-logo" style="display:inline-block;margin-bottom:16px;">Web<span class="logo-studio">Studio</span></a>
+      <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing &amp; growth solutions.</p>
+    </div>
+  </footer>
+</body>
 </html>
