@@ -1,170 +1,168 @@
 <!DOCTYPE html>
-<html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная страница</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Effective solutions for your business" />
+    <title>Web Studio</title>
 
-  <!-- Нормализация -->
-  <link rel="stylesheet" href="modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Основные стили -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-  <!-- ===================== -->
-  <!-- ХЕДЕР -->
-  <!-- ===================== -->
-  <header class="site-header">
-    <div class="header-container container">
-      <nav class="main-nav">
-        <div class="logo">
-          <img src="logo.png" alt="Logo">
+  <body>
+    <header class="header">
+      <div class="header-container container">
+        <nav class="nav">
+          <a href="./index.html" class="logo">
+            Web<span class="logo-studio">Studio</span>
+          </a>
+
+          <ul class="nav-list">
+            <li><a href="./index.html" class="nav-link">Studio</a></li>
+            <li><a href="#" class="nav-link">Portfolio</a></li>
+            <li><a href="#" class="nav-link">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <address class="contact">
+          <ul class="contact-list">
+            <li><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a></li>
+            <li><a href="tel:+110001111111" class="contact-link">+11 (000) 111-11-11</a></li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <button type="button" class="hero-button">Order Service</button>
         </div>
-        <ul class="nav-menu">
-          <li><a href="#" class="nav-link">Home</a></li>
-          <li><a href="#" class="nav-link">About</a></li>
-          <li><a href="#" class="nav-link">Services</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul class="contact-list">
-          <li>Email</li>
-          <li>Phone</li>
-        </ul>
-      </address>
-    </div>
-  </header>
+      </section>
 
-  <!-- ===================== -->
-  <!-- ПЕРША СЕКЦІЯ -->
-  <!-- ===================== -->
-  <section class="hero-section">
-    <div class="hero-container container">
-      <h1 class="hero-title">Welcome to Our Site</h1>
-      <button class="hero-button">Get Started</button>
-    </div>
-  </section>
+      <!-- FEATURES -->
+      <section class="features">
+        <div class="container">
+          <h2 class="visually-hidden">Features</h2>
 
-  <!-- ===================== -->
-  <!-- ДРУГА СЕКЦІЯ -->
-  <!-- ===================== -->
-  <section class="features-section">
-    <div class="features-container container">
-      <h2 class="visually-hidden">Features</h2>
-      <ul class="features-list">
-        <li class="feature-item">
-          <h3 class="feature-title">Feature 1</h3>
-          <p>Description 1</p>
-        </li>
-        <li class="feature-item">
-          <h3 class="feature-title">Feature 2</h3>
-          <p>Description 2</p>
-        </li>
-        <li class="feature-item">
-          <h3 class="feature-title">Feature 3</h3>
-          <p>Description 3</p>
-        </li>
-        <li class="feature-item">
-          <h3 class="feature-title">Feature 4</h3>
-          <p>Description 4</p>
-        </li>
-      </ul>
-    </div>
-  </section>
+          <ul class="features-list">
+            <li class="feature-item">
+              <h3 class="feature-title">Strategy</h3>
+              <p class="feature-text">Our goal is to identify the business problem.</p>
+            </li>
+            <li class="feature-item">
+              <h3 class="feature-title">Punctuality</h3>
+              <p class="feature-text">Bring the key message to the audience.</p>
+            </li>
+            <li class="feature-item">
+              <h3 class="feature-title">Diligence</h3>
+              <p class="feature-text">Research and confirm brands.</p>
+            </li>
+            <li class="feature-item">
+              <h3 class="feature-title">Technologies</h3>
+              <p class="feature-text">Design practice focused on digital experiences.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-  <!-- ===================== -->
-  <!-- ТРЕТЯ СЕКЦІЯ -->
-  <!-- ===================== -->
-  <section class="team-section">
-    <div class="team-container container">
-      <h2 class="team-title">Our Team</h2>
-      <ul class="team-list">
-        <li class="team-member">
-          <div class="member-info">
-            <h3 class="member-name">John Doe</h3>
-            <p class="member-position">CEO</p>
-          </div>
-        </li>
-        <li class="team-member">
-          <div class="member-info">
-            <h3 class="member-name">Jane Smith</h3>
-            <p class="member-position">CTO</p>
-          </div>
-        </li>
-        <li class="team-member">
-          <div class="member-info">
-            <h3 class="member-name">Mark Lee</h3>
-            <p class="member-position">Designer</p>
-          </div>
-        </li>
-        <li class="team-member">
-          <div class="member-info">
-            <h3 class="member-name">Lucy Brown</h3>
-            <p class="member-position">Developer</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
+      <!-- TEAM -->
+      <section class="team">
+        <div class="container">
+          <h2 class="section-title">Our Team</h2>
 
-  <!-- ===================== -->
-  <!-- ЧЕТВЕРТА СЕКЦІЯ -->
-  <!-- ===================== -->
-  <section class="apps-section">
-    <div class="apps-container container">
-      <h2 class="apps-title">Our Apps</h2>
-      <ul class="apps-list">
-        <li class="app-item">
-          <div class="app-info">
-            <h3 class="app-title">App 1</h3>
-            <p class="app-category">Category</p>
-          </div>
-        </li>
-        <li class="app-item">
-          <div class="app-info">
-            <h3 class="app-title">App 2</h3>
-            <p class="app-category">Category</p>
-          </div>
-        </li>
-        <li class="app-item">
-          <div class="app-info">
-            <h3 class="app-title">App 3</h3>
-            <p class="app-category">Category</p>
-          </div>
-        </li>
-        <li class="app-item">
-          <div class="app-info">
-            <h3 class="app-title">App 4</h3>
-            <p class="app-category">Category</p>
-          </div>
-        </li>
-        <li class="app-item">
-          <div class="app-info">
-            <h3 class="app-title">App 5</h3>
-            <p class="app-category">Category</p>
-          </div>
-        </li>
-        <li class="app-item">
-          <div class="app-info">
-            <h3 class="app-title">App 6</h3>
-            <p class="app-category">Category</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
+          <ul class="team-list">
+            <li class="team-member">
+              <img src="./images/team-mark-guerrero.jpg" alt="Mark Guerrero" width="264" height="260" />
+              <div class="team-info">
+                <h3 class="team-name">Mark Guerrero</h3>
+                <p class="team-role">Product Designer</p>
+              </div>
+            </li>
 
-  <!-- ===================== -->
-  <!-- ФУТЕР -->
-  <!-- ===================== -->
-  <footer class="site-footer">
-    <div class="footer-container container">
-      <a href="#" class="footer-link">Privacy Policy</a>
-      <p class="footer-text">© 2026 Company Name. All rights reserved.</p>
-    </div>
-  </footer>
+            <li class="team-member">
+              <img src="./images/team-tom-ford.jpg" alt="Tom Ford" width="264" height="260" />
+              <div class="team-info">
+                <h3 class="team-name">Tom Ford</h3>
+                <p class="team-role">Frontend Developer</p>
+              </div>
+            </li>
 
-</body>
+            <li class="team-member">
+              <img src="./images/team-camila-garcia.jpg" alt="Camila Garcia" width="264" height="260" />
+              <div class="team-info">
+                <h3 class="team-name">Camila Garcia</h3>
+                <p class="team-role">Marketing</p>
+              </div>
+            </li>
+
+            <li class="team-member">
+              <img src="./images/team-daniel-wilson.jpg" alt="Daniel Wilson" width="264" height="260" />
+              <div class="team-info">
+                <h3 class="team-name">Daniel Wilson</h3>
+                <p class="team-role">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section class="portfolio">
+        <div class="container">
+          <h2 class="section-title">Our Portfolio</h2>
+
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <img src="./images/banking-app.jpg" alt="Banking App" width="360" height="300" />
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Banking App</h3>
+                <p class="portfolio-category">App</p>
+              </div>
+            </li>
+
+            <li class="portfolio-item">
+              <img src="./images/cashless-payment.jpg" alt="Cashless Payment" width="360" height="300" />
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Cashless Payment</h3>
+                <p class="portfolio-category">Marketing</p>
+              </div>
+            </li>
+
+            <li class="portfolio-item">
+              <img src="./images/meditation-app.jpg" alt="Meditation App" width="360" height="300" />
+              <div class="portfolio-info">
+                <h3 class="portfolio-title">Meditation App</h3>
+                <p class="portfolio-category">App</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="./index.html" class="footer-logo">
+          Web<span class="logo-studio">Studio</span>
+        </a>
+        <p class="footer-text">
+          Increase the flow of customers and sales for your business.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
